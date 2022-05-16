@@ -1,9 +1,6 @@
 import os
 import telebot
 
-API_KEY = os.getenv('API_KEY')
-bot = telebot.TeleBot(API_KEY)
-
 @bot.message_handler(commands=['mewtwo'])
 def charizard(message):
   bot.reply_to(message, "Best Normal - Timid, modest \nFor Y  -  Timid, hasty \nFor X - Naive and jolly")
